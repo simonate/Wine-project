@@ -55,7 +55,7 @@ def get_champagne():
     zoznam_url = []
 
     for increment in range(1, 28):
-        url = f"https://www.wineshop.sk/cervene-vino?p={increment}"
+        url = f"https://#sem ide url webstranky/cervene-vino?p={increment}"
         stranka = session.get(url)
         print(f"increment {increment}")
         odkazy_vin = stranka.html.find(".w-list-item-title")
